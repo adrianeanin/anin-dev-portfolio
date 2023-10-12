@@ -5,17 +5,43 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <link
       rel="shortcut icon"
-      href="assets/images/favicon.svg"
+      href="/src/assets/images/favicon.svg"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="assets/styles/style.css" />
+    <link rel="stylesheet" href="/src/assets/styles/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>adriananin</title>
   </head>
   <body>
+    <header class="site-head" role="banner">
+      <div class="wrapper">
+        <div class="site-head__inner">
+          <a href="/" aria-label="adriananin home" class="site-head__brand">
+            <p class="site-logo">Adrian Anin</p>
+          </a>
+
+          <burger-menu max-width="600">
+            <nav class="navigation" aria-label="primary">
+              <ul role="list">
+                <li>
+                  <a href="#">About</a>
+                </li>
+                <li>
+                  <a href="#">Projects</a>
+                </li>
+                <li>
+                  <a href="#" class="navigation__contact">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </burger-menu>
+        </div>
+      </div>
+    </header>
+
     <main id="main-content" class="wrapper">
-      <article>
-        <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h1>
+      <article class="flow">
+        <h1>Adrian Anin</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
           optio numquam voluptates tempora aut veniam asperiores sapiente iste
@@ -25,12 +51,12 @@
           <a href="#">Lorem, ipsum dolor.</a>
         </p>
 
-        <button class="btn-primary">Contact</button>
-
         <button class="btn-secondary">Projects</button>
+
+        <button class="btn-primary">Contact</button>
       </article>
     </main>
 
-    <script type="module" src="/main.js"></script>
+    <script type="module" src="/src/js/burger-menu.js"></script>
   </body>
 </html>
