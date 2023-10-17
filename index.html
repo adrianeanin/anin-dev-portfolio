@@ -24,7 +24,7 @@
             <nav class="navigation" aria-label="primary">
               <ul role="list">
                 <li>
-                  <a href="#">About</a>
+                  <a href="#about">About</a>
                 </li>
                 <li>
                   <a href="#">Projects</a>
@@ -39,23 +39,209 @@
       </div>
     </header>
 
-    <main id="main-content" class="wrapper">
-      <article class="flow">
-        <h1>Adrian Anin</h1>
-        <p>
+    <main class="wrapper">
+      <article id="home" class="home flow">
+        <div class="home__title-wrapper">
+          <h3 class="home__title">Hi, I'm</h3>
+          <h1 class="home__name">Adrian Anin</h1>
+        </div>
+
+        <hr />
+        <p class="home__intro">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
           optio numquam voluptates tempora aut veniam asperiores sapiente iste
           molestias ea?
         </p>
-        <p>
-          <a href="#">Lorem, ipsum dolor.</a>
+
+        <div class="home__btns">
+          <button class="btn-secondary">Projects</button>
+          <button class="btn-primary">Contact</button>
+        </div>
+      </article>
+
+      <article id="about" class="about flow">
+        <h2 class="about__title">About</h2>
+        <hr />
+
+        <p class="about__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ratione
+          molestiae repellat hic iure quae enim nostrum quam sunt rerum!
         </p>
 
-        <button class="btn-secondary">Projects</button>
+        <div class="about__tech">
+          <div class="about__ts">JS</div>
+          <div class="about__ts">CSS</div>
+          <div class="about__ts">REACT</div>
+          <div class="about__ts">NodeJS</div>
+        </div>
+      </article>
 
-        <button class="btn-primary">Contact</button>
+      <article id="projects" class="projects flow">
+        <h2 class="projects__title">Projects</h2>
+        <hr />
+        <div class="projects__grid">
+          <div class="projects__grid-card">
+            <div class="card__img"></div>
+
+            <p class="card__title">Project Title</p>
+            <hr class="card__hr" />
+
+            <p class="card__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
+              ducimus?
+            </p>
+
+            <div class="card__stack">
+              <div class="card__ts">JS</div>
+              <div class="card__ts">HTML</div>
+              <div class="card__ts">CSS</div>
+              <div class="card__ts">React</div>
+            </div>
+
+            <div class="card__links">
+              <a href="#" class="github">github</a>
+              <a href="#" class="link">link</a>
+            </div>
+          </div>
+
+          <div class="projects__grid-card">
+            <div class="card__img"></div>
+
+            <p class="card__title">Project Title</p>
+            <hr class="card__hr" />
+
+            <p class="card__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
+              ducimus?
+            </p>
+
+            <div class="card__stack">
+              <div class="card__ts">JS</div>
+              <div class="card__ts">HTML</div>
+              <div class="card__ts">CSS</div>
+              <div class="card__ts">React</div>
+            </div>
+
+            <div class="card__links">
+              <a href="#" class="github">github</a>
+              <a href="#" class="link">link</a>
+            </div>
+          </div>
+
+          <div class="projects__grid-card">
+            <div class="card__img"></div>
+
+            <p class="card__title">Project Title</p>
+
+            <hr class="card__hr" />
+            <p class="card__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
+              ducimus?
+            </p>
+
+            <div class="card__stack">
+              <div class="card__ts">JS</div>
+              <div class="card__ts">HTML</div>
+              <div class="card__ts">CSS</div>
+              <div class="card__ts">React</div>
+            </div>
+
+            <div class="card__links">
+              <a href="#" class="github">github</a>
+              <a href="#" class="link">link</a>
+            </div>
+          </div>
+
+          <div class="projects__grid-card">
+            <div class="card__img"></div>
+
+            <p class="card__title">Project Title</p>
+
+            <hr class="card__hr" />
+            <p class="card__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
+              ducimus?
+            </p>
+
+            <div class="card__stack">
+              <div class="card__ts">JS</div>
+              <div class="card__ts">HTML</div>
+              <div class="card__ts">CSS</div>
+              <div class="card__ts">React</div>
+            </div>
+
+            <div class="card__links">
+              <a href="#" class="github">github</a>
+              <a href="#" class="link">link</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article id="contact" class="contact flow">
+        <h2 class="contact__title">Contact</h2>
+        <hr />
+
+        <form
+          action="https://formsubmit.co/adrian.anin@outlook.com"
+          method="POST"
+        >
+          <div class="contact__grid">
+            <div class="contact__wrapper">
+              <div class="contact__name">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Adrian Anin" />
+              </div>
+
+              <div class="contact__email">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="email@example.com" />
+              </div>
+            </div>
+
+            <div class="contact__wrapper">
+              <div class="contact__message">
+                <label for="message">Message</label>
+                <textarea
+                  type="text"
+                  id="message"
+                  placeholder="How can I help?"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+              </div>
+              <button class="submit-btn" type="submit">Send Messsage</button>
+            </div>
+          </div>
+        </form>
       </article>
     </main>
+
+    <footer class="footer wrapper">
+      <a href="/" aria-label="adriananin home" class="site-head__brand">
+        <p class="site-logo">Adrian Anin</p>
+      </a>
+
+      <nav class="navigation" aria-label="secondary">
+        <ul role="list">
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#contact" class="navigation__contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="footer__social-icons">
+        <div class="github">GH</div>
+        <div class="twitter">X</div>
+        <div class="linkedin">Ln</div>
+      </div>
+    </footer>
 
     <script type="module" src="/src/js/burger-menu.js"></script>
   </body>
