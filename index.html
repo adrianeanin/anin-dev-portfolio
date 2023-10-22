@@ -3,21 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <link
-      rel="shortcut icon"
-      href="/src/assets/images/favicon.svg"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="/favicon.svg" type="image/x-icon" />
     <link rel="stylesheet" href="/src/assets/styles/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>adriananin</title>
   </head>
   <body>
-    <header class="site-head" role="banner">
+    <header class="site-head" role="banner" id="home">
       <div class="wrapper">
         <div class="site-head__inner">
           <a href="/" aria-label="adriananin home" class="site-head__brand">
-            <p class="site-logo">Adrian Anin</p>
+            <p>A</p>
           </a>
 
           <burger-menu max-width="600">
@@ -40,32 +36,33 @@
     </header>
 
     <main class="wrapper">
-      <article id="home" class="home flow">
-        <div class="home__title-wrapper">
-          <h3 class="home__title">Hi, I'm</h3>
-          <h1 class="home__name">Adrian Anin</h1>
+      <article class="name | flow">
+        <div class="name__title-wrapper">
+          <p class="name__title">Hey there 👋, I'm</p>
+          <h1 class="name__name">Adrian Anin</h1>
+          <hr />
         </div>
 
-        <hr />
-        <p class="home__intro">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
-          optio numquam voluptates tempora aut veniam asperiores sapiente iste
-          molestias ea?
+        <p class="name__intro">
+          A reliable and efficient fullstack developer passionate about clean
+          code and optimal user experience.
         </p>
 
-        <div class="home__btns">
+        <div class="name__btns">
           <button class="btn-secondary">Projects</button>
           <button class="btn-primary">Contact</button>
         </div>
       </article>
 
-      <article id="about" class="about flow">
+      <article id="about" class="about | spacer | flow">
         <h2 class="about__title">About</h2>
         <hr />
 
         <p class="about__text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ratione
-          molestiae repellat hic iure quae enim nostrum quam sunt rerum!
+          When I'm not traversing the galaxy of code, I'm usually spending time
+          with nature, reading, laughing at memes, or admiring photos I've take
+          or seen elsewhere. Fun fact: In junior high school, I fell in love
+          with a computer and I've never been the same since.
         </p>
 
         <div class="about__tech">
@@ -76,7 +73,7 @@
         </div>
       </article>
 
-      <article id="projects" class="projects flow">
+      <article id="projects" class="projects | flow | spacer">
         <h2 class="projects__title">Projects</h2>
         <hr />
         <div class="projects__grid">
@@ -104,6 +101,11 @@
             </div>
           </div>
 
+          <div class="projects__grid-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique,
+            expedita?
+          </div>
+
           <div class="projects__grid-card">
             <div class="card__img"></div>
 
@@ -126,6 +128,11 @@
               <a href="#" class="github">github</a>
               <a href="#" class="link">link</a>
             </div>
+          </div>
+
+          <div class="projects__grid-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique,
+            expedita?
           </div>
 
           <div class="projects__grid-card">
@@ -152,6 +159,11 @@
             </div>
           </div>
 
+          <div class="projects__grid-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique,
+            expedita?
+          </div>
+
           <div class="projects__grid-card">
             <div class="card__img"></div>
 
@@ -174,29 +186,52 @@
               <a href="#" class="github">github</a>
               <a href="#" class="link">link</a>
             </div>
+          </div>
+
+          <div class="projects__grid-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique,
+            expedita?
           </div>
         </div>
       </article>
 
-      <article id="contact" class="contact flow">
+      <article id="contact" class="contact | flow | spacer">
         <h2 class="contact__title">Contact</h2>
         <hr />
 
         <form
-          action="https://formsubmit.co/adrian.anin@outlook.com"
+          action="c30c8441b77e82bf0b324b8f2c0d3400"
           method="POST"
+          enctype="text/plain"
         >
           <div class="contact__grid">
             <div class="contact__wrapper">
               <div class="contact__name">
                 <label for="name">Name</label>
-                <input type="text" id="name" placeholder="Adrian Anin" />
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Adrian Anin"
+                />
               </div>
 
               <div class="contact__email">
                 <label for="email">Email</label>
-                <input type="text" id="email" placeholder="email@example.com" />
+                <input
+                  type="text"
+                  id="email"
+                  name="email"
+                  placeholder="email@example.com"
+                />
               </div>
+              <input
+                type="hidden"
+                aria-hidden="true"
+                style="display: none"
+                name="_next"
+                value="https://yourdomain.co/thanks.html"
+              />
             </div>
 
             <div class="contact__wrapper">
@@ -205,41 +240,46 @@
                 <textarea
                   type="text"
                   id="message"
+                  name="message"
                   placeholder="How can I help?"
                   cols="30"
                   rows="10"
                 ></textarea>
               </div>
-              <button class="submit-btn" type="submit">Send Messsage</button>
+              <button class="submit-btn | spacer" type="submit">
+                Send Messsage
+              </button>
             </div>
           </div>
         </form>
       </article>
     </main>
 
-    <footer class="footer wrapper">
-      <a href="/" aria-label="adriananin home" class="site-head__brand">
-        <p class="site-logo">Adrian Anin</p>
-      </a>
+    <footer class="footer | spacer">
+      <div class="wrapper | footer-inner">
+        <a href="#home" aria-label="adriananin home" class="site-head__brand">
+          <p>A</p>
+        </a>
 
-      <nav class="navigation" aria-label="secondary">
-        <ul role="list">
-          <li>
-            <a href="#about">About</a>
-          </li>
-          <li>
-            <a href="#projects">Projects</a>
-          </li>
-          <li>
-            <a href="#contact" class="navigation__contact">Contact</a>
-          </li>
-        </ul>
-      </nav>
+        <nav class="navigation | footer-nav" aria-label="secondary">
+          <ul role="list">
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#projects">Projects</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
 
-      <div class="footer__social-icons">
-        <div class="github">GH</div>
-        <div class="twitter">X</div>
-        <div class="linkedin">Ln</div>
+        <div class="footer__social-icons">
+          <a class="github">GH</a>
+          <a class="twitter">X</a>
+          <a class="linkedin">Ln</a>
+        </div>
       </div>
     </footer>
 
