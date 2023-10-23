@@ -1,6 +1,5 @@
 @import url("cssReset.css");
 @import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;200;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;500;600;700&display=swap");
 
 /* @media (prefers-color-scheme: light) {
   :root {
@@ -81,18 +80,6 @@
   --step-5: clamp(2.4881rem, 2.292rem + 0.9804vw, 3.0519rem);
 }
 
-/* #main-content {
-} */
-
-/* h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Ibarra Real Nova", serif;
-} */
-
 body {
   color: var(--text);
   background-color: var(--background);
@@ -120,14 +107,18 @@ dl {
 }
 
 a {
+  display: inline-block;
   letter-spacing: 0.05rem;
-  transition: color 0.25s ease-in-out;
+  text-decoration: none;
+  color: var(--text);
+  transition: color 0.3s ease, transform 0.45s ease;
 }
 
 a:hover {
-  color: var(--accent);
-  border-color: var(--accent);
+  color: var(--background);
+  border-color: var(--background);
   cursor: pointer;
+  transform: scale(1.05);
 }
 
 button {
@@ -138,7 +129,7 @@ button {
   cursor: pointer;
   background-color: var(--background);
   letter-spacing: 0.05rem;
-  transition: transform 0.3s ease;
+  transition: transform 0.45s ease;
 }
 
 button:hover {
@@ -224,15 +215,6 @@ a:active {
 
 .navigation li {
   margin: 0.1rem;
-}
-
-.navigation a {
-  text-decoration: none;
-  color: currentColor;
-}
-
-.navigation a:hover {
-  color: var(--accent);
 }
 
 /* burger-menu styling */
@@ -322,7 +304,7 @@ a:active {
 .burger-menu[enabled="true"][status="open"] .burger-menu__panel {
   visibility: visible;
   opacity: 1;
-  transition: opacity 400ms ease;
+  transition: opacity 0.4s ease;
 }
 
 .burger-menu[enabled="true"][status="closed"] .burger-menu__panel > * {
@@ -333,8 +315,8 @@ a:active {
 .burger-menu[enabled="true"][status="open"] .burger-menu__panel > * {
   transform: translateY(0);
   opacity: 1;
-  transition: transform 500ms cubic-bezier(0.17, 0.67, 0, 0.87) 700ms,
-    opacity 500ms ease 800ms;
+  transition: transform 0.5s cubic-bezier(0.17, 0.67, 0, 0.87) 0.7s,
+    opacity 0.5s ease 0.8s;
 }
 
 .burger-menu[enabled="true"][status="open"] .burger-menu__bar::before {
@@ -521,5 +503,15 @@ textarea::placeholder {
 @media (max-width: 40em) {
   input {
     width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  button {
+    transition: none;
+  }
+
+  a {
+    transition: none;
   }
 }
