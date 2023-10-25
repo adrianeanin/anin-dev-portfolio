@@ -71,4 +71,12 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+
+  button {
+    transition: none;
+  }
+
+  a {
+    transition: none;
+  }
 }

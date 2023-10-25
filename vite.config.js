@@ -1,5 +1,6 @@
 export default {
   server: {
-    port: 5178, // Change this to the desired port number
+    host: "0.0.0.0",
+    port: 5178,
   },
 };

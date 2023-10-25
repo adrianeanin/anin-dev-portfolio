@@ -2,20 +2,21 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
-    <link rel="icon" type="image/png" href="/images/favicon.png" /> -->
-
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
     <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
 
-    <link rel="stylesheet" href="/src/styles/style.css" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="/src/assets/styles/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>adriananin</title>
+    <title>Adrian Anin</title>
   </head>
   <body>
     <header class="site-head" role="banner" id="home">
@@ -46,12 +47,11 @@
 
     <main class="wrapper">
       <article class="name | flow">
-        <div class="name__title-wrapper">
+        <div class="name__title-wrapper | spacer">
           <p class="name__title">Hey there 👋, I'm</p>
           <h1 class="name__name">Adrian Anin</h1>
-          <hr />
         </div>
-
+        <hr />
         <p class="name__intro">
           A fullstack developer passionate about creating user-friendly and
           visually appealing websites.
@@ -65,7 +65,6 @@
 
       <article id="about" class="about | spacer | flow">
         <h2 class="about__title">About</h2>
-        <hr />
 
         <p class="about__text">
           When I'm not traversing the galaxy of code, I'm usually spending time
@@ -74,39 +73,122 @@
           with a computer and I've never been the same since.
         </p>
 
+        <hr />
+
+        <p class="about__text | about__tech-intro">
+          Here are some tools I've used in my coding adventures:
+        </p>
+
         <div class="about__tech">
-          <div class="about__ts">JS</div>
-          <div class="about__ts">CSS</div>
-          <div class="about__ts">REACT</div>
-          <div class="about__ts">NodeJS</div>
+          <div class="about__ts">
+            <i class="devicon-html5-plain-wordmark colored"></i>
+          </div>
+          <div class="about__ts">
+            <i class="devicon-css3-plain-wordmark colored"></i>
+          </div>
+          <div class="about__ts">
+            <i class="devicon-javascript-plain colored"></i>
+          </div>
+          <div class="about__ts">
+            <i class="devicon-mongodb-plain-wordmark colored"></i>
+          </div>
+          <div class="about__ts">
+            <i class="devicon-express-original colored"></i>
+          </div>
+          <div class="about__ts">
+            <i class="devicon-react-original-wordmark colored"></i>
+          </div>
+          <div class="about__ts">
+            <i class="devicon-nodejs-plain-wordmark colored"></i>
+          </div>
+          <div class="about__ts">
+            <i class="devicon-git-plain-wordmark colored"></i>
+          </div>
+          <div class="about__ts">
+            <i class="devicon-jest-plain colored"></i>
+          </div>
         </div>
       </article>
 
       <article id="projects" class="projects | flow | spacer">
         <h2 class="projects__title">Projects</h2>
-        <hr />
+
         <div class="projects__grid">
           <div class="projects__grid-card">
             <div class="card__img"></div>
 
-            <p class="card__title">Project Title</p>
+            <p class="card__title">Cv Generator</p>
             <hr class="card__hr" />
 
-            <p class="card__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
-              ducimus?
-            </p>
-
             <div class="card__stack">
-              <div class="card__ts">JS</div>
+              <div class="card__ts">
+                <i class="devicon-react-original-wordmark colored"></i>
+              </div>
               <div class="card__ts">HTML</div>
               <div class="card__ts">CSS</div>
-              <div class="card__ts">React</div>
+              <div class="card__ts"></div>
             </div>
 
             <div class="card__links">
-              <a href="#" class="github">github</a>
-              <a href="#" class="link">link</a>
+              <a
+                href="https://github.com/adriananin/react-cv-generator"
+                target="_blank"
+                ><i class="devicon-github-original"></i
+              ></a>
+              <a
+                href="https://react-cv-generator.vercel.app/"
+                target="_blank"
+                class="link"
+                ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <title>open-in-new</title>
+                  <path
+                    d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"
+                  /></svg
+              ></a>
+            </div>
+          </div>
+
+          <div class="projects__grid-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique,
+            expedita?
+          </div>
+
+          <div class="projects__grid-card | flow">
+            <div
+              class="card__img"
+              data-link="https://memoji-rho.vercel.app/"
+            ></div>
+
+            <p class="card__title">Memoji</p>
+
+            <div class="card__stack">
+              <div class="card__ts">
+                <i class="devicon-react-original-wordmark colored"></i>
+              </div>
+              <div class="card__ts">
+                <i class="devicon-npm-original-wordmark colored"></i>
+              </div>
+              <div class="card__ts">
+                <i class="devicon-css3-plain-wordmark colored"></i>
+              </div>
+            </div>
+
+            <div class="card__links">
+              <a
+                href="https://github.com/adriananin/react-memory-game"
+                target="_blank"
+                ><i class="devicon-github-original"></i
+              ></a>
+              <a
+                href="https://memoji-rho.vercel.app/"
+                target="_blank"
+                class="link"
+                ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <title>open-in-new</title>
+                  <path
+                    d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"
+                  /></svg
+              ></a>
             </div>
           </div>
 
@@ -119,12 +201,8 @@
             <div class="card__img"></div>
 
             <p class="card__title">Project Title</p>
-            <hr class="card__hr" />
 
-            <p class="card__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
-              ducimus?
-            </p>
+            <hr class="card__hr" />
 
             <div class="card__stack">
               <div class="card__ts">JS</div>
@@ -134,8 +212,19 @@
             </div>
 
             <div class="card__links">
-              <a href="#" class="github">github</a>
-              <a href="#" class="link">link</a>
+              <a href="https://memoji-rho.vercel.app/" target="_blank"
+                ><i class="devicon-github-original"></i
+              ></a>
+              <a
+                href="https://github.com/adriananin/react-memory-game"
+                target="_blank"
+                class="link"
+                ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <title>open-in-new</title>
+                  <path
+                    d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"
+                  /></svg
+              ></a>
             </div>
           </div>
 
@@ -150,10 +239,6 @@
             <p class="card__title">Project Title</p>
 
             <hr class="card__hr" />
-            <p class="card__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
-              ducimus?
-            </p>
 
             <div class="card__stack">
               <div class="card__ts">JS</div>
@@ -163,37 +248,19 @@
             </div>
 
             <div class="card__links">
-              <a href="#" class="github">github</a>
-              <a href="#" class="link">link</a>
-            </div>
-          </div>
-
-          <div class="projects__grid-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique,
-            expedita?
-          </div>
-
-          <div class="projects__grid-card">
-            <div class="card__img"></div>
-
-            <p class="card__title">Project Title</p>
-
-            <hr class="card__hr" />
-            <p class="card__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
-              ducimus?
-            </p>
-
-            <div class="card__stack">
-              <div class="card__ts">JS</div>
-              <div class="card__ts">HTML</div>
-              <div class="card__ts">CSS</div>
-              <div class="card__ts">React</div>
-            </div>
-
-            <div class="card__links">
-              <a href="#" class="github">github</a>
-              <a href="#" class="link">link</a>
+              <a href="https://memoji-rho.vercel.app/" target="_blank"
+                ><i class="devicon-github-original"></i
+              ></a>
+              <a
+                href="https://github.com/adriananin/react-memory-game"
+                target="_blank"
+                class="link"
+                ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <title>open-in-new</title>
+                  <path
+                    d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"
+                  /></svg
+              ></a>
             </div>
           </div>
 
@@ -206,13 +273,8 @@
 
       <article id="contact" class="contact | flow | spacer">
         <h2 class="contact__title">Contact</h2>
-        <hr />
 
-        <form
-          action="c30c8441b77e82bf0b324b8f2c0d3400"
-          method="POST"
-          enctype="text/plain"
-        >
+        <form action="" method="POST" enctype="text/plain">
           <div class="contact__grid">
             <div class="contact__wrapper">
               <div class="contact__name">
@@ -271,7 +333,7 @@
         </a>
 
         <nav class="navigation | footer-nav" aria-label="secondary">
-          <ul role="list">
+          <ul role="list" class="footer-ul">
             <li>
               <a href="#about">About</a>
             </li>
@@ -285,13 +347,36 @@
         </nav>
 
         <div class="footer__social-icons">
-          <a class="github">GH</a>
-          <a class="twitter">X</a>
-          <a class="linkedin">Ln</a>
+          <a href="https://github.com/adriananin" aria-label="github profile"
+            ><i class="devicon-github-original"></i
+          ></a>
+
+          <a
+            href="https://twitter.com/adriananin"
+            aria-label="twitter(X) profile"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="100"
+              height="100"
+              viewBox="0 0 50 50"
+            >
+              <path
+                d="M 5.9199219 6 L 20.582031 27.375 L 6.2304688 44 L 9.4101562 44 L 21.986328 29.421875 L 31.986328 44 L 44 44 L 28.681641 21.669922 L 42.199219 6 L 39.029297 6 L 27.275391 19.617188 L 17.933594 6 L 5.9199219 6 z M 9.7167969 8 L 16.880859 8 L 40.203125 42 L 33.039062 42 L 9.7167969 8 z"
+              ></path></svg
+          ></a>
+
+          <a
+            href="https://www.linkedin.com/in/adriananin/"
+            aria-label="linkedin profile"
+          >
+            <i class="devicon-linkedin-plain"></i>
+          </a>
         </div>
       </div>
     </footer>
 
-    <script type="module" src="/src/js/burger-menu.js"></script>
+    <script type="module" src="/src/js/main.js"></script>
   </body>
 </html>
