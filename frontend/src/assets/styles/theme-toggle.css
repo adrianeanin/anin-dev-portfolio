@@ -1,0 +1,41 @@
+@import "sun-and-moon.css";
+
+.theme-toggle {
+  --size: 1.2rem;
+  --icon-fill: rgba(37, 4, 4, 0.8);
+  --icon-fill-hover: rgb(37, 4, 4);
+
+  background: none;
+  border: none;
+  padding: 0;
+
+  inline-size: var(--size);
+  block-size: var(--size);
+  aspect-ratio: 1;
+  border-radius: 50%;
+
+  cursor: pointer;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+
+  outline-offset: 5px;
+
+  & > svg {
+    inline-size: 100%;
+    block-size: 100%;
+    stroke-linecap: round;
+  }
+
+  [data-theme="dark"] & {
+    --icon-fill: rgba(251, 218, 218, 0.8);
+    --icon-fill-hover: rgb(251, 218, 218);
+  }
+
+  @media (hover: none) {
+    --size: 48px;
+  }
+}
+
+.theme-toggle:focus {
+  outline: 1px solid var(--icon-fill);
+}

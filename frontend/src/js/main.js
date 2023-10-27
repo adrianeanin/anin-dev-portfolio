@@ -147,6 +147,8 @@ if ("customElements" in window) {
   customElements.define("burger-menu", BurgerMenu);
 }
 
+export default BurgerMenu;
+
 // Scroll Behavior
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -175,4 +177,3 @@ cardImages.forEach(function (cardImage) {
     window.open(link, "_blank");
   });
 });
-export default BurgerMenu;

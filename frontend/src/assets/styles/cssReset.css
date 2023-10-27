@@ -79,4 +79,8 @@ select {
   a {
     transition: none;
   }
+
+  .card__img {
+    transition: none;
+  }
 }
