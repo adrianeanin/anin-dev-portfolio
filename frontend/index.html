@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="description" content="Adrian Anin Portofolio site" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -317,7 +318,11 @@
       <article id="contact" class="contact | flow | spacer">
         <h2 class="contact__title">Contact</h2>
 
-        <form action="https://formspree.io/f/mknlyyjo" method="POST">
+        <form
+          id="contact-form"
+          action="https://anindev.fly.dev/email"
+          method="POST"
+        >
           <div class="contact__grid">
             <div class="contact__wrapper">
               <div class="contact__name">
@@ -327,6 +332,7 @@
                   id="name"
                   name="name"
                   placeholder="Adrian Anin"
+                  required
                 />
               </div>
 
@@ -336,7 +342,8 @@
                   type="text"
                   id="email"
                   name="email"
-                  placeholder="email@example.com"
+                  placeholder="anin@example.com"
+                  required
                 />
               </div>
             </div>
@@ -351,6 +358,7 @@
                   placeholder="How can I help?"
                   cols="30"
                   rows="10"
+                  required
                 ></textarea>
               </div>
               <button class="submit-btn | spacer" type="submit">
