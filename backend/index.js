@@ -1,6 +1,7 @@
 require("dotenv").config();
 const express = require("express");
 const nodemailer = require("nodemailer");
+const path = require("path");
 const cors = require("cors");
 
 const app = express();
@@ -27,6 +28,8 @@ transporter.verify((error, success) => {
   }
 });
 
+app.use(express.static(path.join(__dirname, "frontend/public")));
+
 app.post("/email", (req, res) => {
   const { name, email, message } = req.body;
 
@@ -42,27 +45,12 @@ app.post("/email", (req, res) => {
       console.error(error);
       return res.status(500).send(`Error sending email: ${error.toString()}`);
     }
-    res.redirect("/thanks");
+    res.status(200).redirect("/thanks.html");
   });
 });
 
 app.get("/", (req, res) => {
   res.send("<h1>anin endpoint</h1>");
-});
-
-app.get("/thanks", (req, res) => {
-  const options = {
-    root: __dirname,
-    headers: {
-      "Content-Type": "text/html",
-    },
-  };
-  res.status(200).sendFile("thanks.html", options, (err) => {
-    if (err) {
-      console.error(err);
-      res.status(err.status).end();
-    }
-  });
 });
 
 app.listen(PORT, () => {
