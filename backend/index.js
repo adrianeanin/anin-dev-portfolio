@@ -47,7 +47,7 @@ app.post("/email", (req, res) => {
 });
 
 app.get("/", (req, res) => {
-  res.send("<h1>my endpoint</h1>");
+  res.send("<h1>anin endpoint</h1>");
 });
 
 app.get("/thanks", (req, res) => {
