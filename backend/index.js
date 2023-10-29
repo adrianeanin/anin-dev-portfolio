@@ -45,22 +45,7 @@ app.post("/email", (req, res) => {
       console.error(error);
       return res.status(500).send(`Error sending email: ${error.toString()}`);
     }
-    res.redirect("/thanks");
-  });
-});
-
-app.get("/thanks", (req, res) => {
-  const options = {
-    root: __dirname,
-    headers: {
-      "Content-Type": "text/html",
-    },
-  };
-  res.status(200).sendFile("thanks.html", options, (err) => {
-    if (err) {
-      console.error(err);
-      res.status(err.status).end();
-    }
+    res.status(200).json({ success: true });
   });
 });
 

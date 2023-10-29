@@ -177,3 +177,60 @@ cardImages.forEach(function (cardImage) {
     window.open(link, "_blank");
   });
 });
+
+// Spinner
+
+import { Spinner } from "spin.js";
+
+const opts = {
+  lines: 14,
+  length: 36,
+  width: 17,
+  radius: 47,
+  scale: 0.15,
+  corners: 1,
+  speed: 0.9,
+  rotate: 0,
+  animation: "spinner-line-fade-quick",
+  direction: 1,
+  color: "#16caca",
+  fadeColor: "transparent",
+  top: "50%",
+  left: "0%",
+  shadow: "0 0 1px transparent",
+  zIndex: 2000000000,
+  className: "spinner",
+  position: "absolute",
+};
+
+const target = document.querySelector("#spinner-wrapper");
+
+// Form
+
+const form = document.querySelector("#contact-form");
+const thanksMessage = document.querySelector("#thanks-message");
+
+form.addEventListener("submit", async (event) => {
+  event.preventDefault();
+  const spinner = new Spinner(opts).spin(target);
+
+  const formData = new FormData(form);
+  const response = await fetch(form.action, {
+    method: form.method,
+    body: new URLSearchParams(formData),
+  });
+
+  const result = await response.json();
+  spinner.stop();
+
+  if (result.success) {
+    spinner.stop();
+    thanksMessage.style.display = "block";
+
+    setTimeout(() => {
+      thanksMessage.style.display = "none";
+    }, 5000);
+  } else {
+    console.error(result.error);
+  }
+});

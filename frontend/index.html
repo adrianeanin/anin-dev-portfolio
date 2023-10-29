@@ -320,7 +320,7 @@
 
         <form
           id="contact-form"
-          action="https://anin-dev-portfolio.onrender.com/email"
+          action="http://localhost:3001/email"
           method="POST"
         >
           <div class="contact__grid">
@@ -361,9 +361,17 @@
                   required
                 ></textarea>
               </div>
-              <button class="submit-btn | spacer" type="submit">
-                Send Messsage
-              </button>
+              <div class="submit-btn-wrapper | spacer">
+                <div id="spinner-wrapper"></div>
+                <button class="submit-btn" type="submit">Send Messsage</button>
+              </div>
+
+              <div id="thanks-message" style="display: none">
+                <p>
+                  Thanks for reaching out 😃 <br />I'll definitely reply when I
+                  see your message.
+                </p>
+              </div>
             </div>
           </div>
         </form>
@@ -422,5 +430,6 @@
     </footer>
 
     <script type="module" src="/src/js/main.js"></script>
+    <script type="module" src="node_modules/spin.js/spin.js"></script>
   </body>
 </html>
