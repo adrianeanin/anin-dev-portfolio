@@ -30,7 +30,7 @@
           </a>
 
           <burger-menu max-width="600">
-            <nav class="navigation" aria-label="primary">
+            <nav class="navigation">
               <ul role="list">
                 <li>
                   <a href="#about">About</a>
@@ -168,8 +168,12 @@
               <div class="card__ts">
                 <i class="devicon-react-original-wordmark colored"></i>
               </div>
-              <div class="card__ts">HTML</div>
-              <div class="card__ts">CSS</div>
+              <div class="card__ts">
+                <i class="devicon-css3-plain-wordmark colored"></i>
+              </div>
+              <div class="card__ts">
+                <ion-icon name="logo-vercel"></ion-icon>
+              </div>
               <div class="card__ts"></div>
             </div>
 
@@ -177,14 +181,17 @@
               <a
                 href="https://github.com/adriananin/react-cv-generator"
                 target="_blank"
+                rel="noopener noreferrer"
+                aria-label="open github repo in new window"
                 ><i class="devicon-github-original"></i
               ></a>
               <a
                 href="https://react-cv-generator.vercel.app/"
                 target="_blank"
                 class="link"
+                rel="noopener noreferrer"
                 ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                  <title>open-in-new</title>
+                  <title>open-in-new-window</title>
                   <path
                     d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"
                   /></svg
@@ -193,8 +200,21 @@
           </div>
 
           <div class="projects__grid-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique,
-            expedita?
+            I built the React cv / resume builder web app to practice using the
+            useState hook in React. Users can create and manage their resumes
+            and save as pdf when ready. There is a default view loaded when the
+            app is first loaded to give users an idea of how the final result
+            would turn out. One feature about React that stood out in this
+            project for me was the need for every list item to have a unique id.
+            I used the UUID library to achieve this behavior. I decided to
+            separate the inputs and display for each section (personal details,
+            work, education, and skills) into their own components to make the
+            code more readable and maintainable. I also styled each component
+            separately, although with vanilla CSS. I also included a
+            localStorage helper function to persist user input in different
+            sessions. I used Vite as my build tool and deployed the app on
+            Vercel. Overall I thoroughly enjoyed building this web app and hope
+            users enjoy using it too!
           </div>
 
           <div class="projects__grid-card | flow">
@@ -210,9 +230,6 @@
                 <i class="devicon-react-original-wordmark colored"></i>
               </div>
               <div class="card__ts">
-                <i class="devicon-npm-original-wordmark colored"></i>
-              </div>
-              <div class="card__ts">
                 <i class="devicon-css3-plain-wordmark colored"></i>
               </div>
             </div>
@@ -221,14 +238,17 @@
               <a
                 href="https://github.com/adriananin/react-memory-game"
                 target="_blank"
+                aria-label="open github repo in new window"
+                rel="noopener noreferrer"
                 ><i class="devicon-github-original"></i
               ></a>
               <a
                 href="https://memoji-rho.vercel.app/"
                 target="_blank"
                 class="link"
+                rel="noopener noreferrer"
                 ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                  <title>open-in-new</title>
+                  <title>open-in-new-window</title>
                   <path
                     d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"
                   /></svg
@@ -237,34 +257,53 @@
           </div>
 
           <div class="projects__grid-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique,
-            expedita?
+            Memoji is React memory game I designed and built to practice using
+            the mainly the useEffect hook although I also used useState. It’s
+            got from two words memory and emoji. I used the axios library to get
+            data from the emoji API. To win, users must click each of the 12
+            emojis at most once (the emojis reshuffle after each click). After
+            each win, a new set of emojis are displayed and after 3 consecutive
+            losses, new emojis are loaded. One of my main takeaways from this
+            project was the use of a .env file for hiding API keys and
+            integrating that with Vercel. This was a fun and gamified approach
+            to learning and I hope users can create good memories on Memoji.
           </div>
 
-          <div class="projects__grid-card">
-            <div class="card__img"></div>
+          <div class="projects__grid-card | flow">
+            <div
+              class="card__img"
+              data-link="https://adriananin.github.io/to-do-list/"
+            ></div>
 
-            <p class="card__title">Project Title</p>
-
-            <hr class="card__hr" />
+            <p class="card__title">Todo List</p>
 
             <div class="card__stack">
-              <div class="card__ts">JS</div>
-              <div class="card__ts">HTML</div>
-              <div class="card__ts">CSS</div>
-              <div class="card__ts">React</div>
+              <div class="card__ts">
+                <i class="devicon-html5-plain-wordmark colored"></i>
+              </div>
+              <div class="card__ts">
+                <i class="devicon-css3-plain-wordmark colored"></i>
+              </div>
+              <div class="card__ts">
+                <i class="devicon-javascript-plain colored"></i>
+              </div>
             </div>
 
             <div class="card__links">
-              <a href="https://memoji-rho.vercel.app/" target="_blank"
+              <a
+                href="https://github.com/adriananin/to-do-list"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="open github repo in new window"
                 ><i class="devicon-github-original"></i
               ></a>
               <a
-                href="https://github.com/adriananin/react-memory-game"
+                href="https://adriananin.github.io/to-do-list/"
                 target="_blank"
                 class="link"
+                rel="noopener noreferrer"
                 ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                  <title>open-in-new</title>
+                  <title>open-in-new-window</title>
                   <path
                     d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"
                   /></svg
@@ -273,34 +312,52 @@
           </div>
 
           <div class="projects__grid-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique,
-            expedita?
+            I built the Todo List web app to practice vanilla JavaScript. Users
+            can add new tasks, mark them as completed, delete tasks and filter
+            them based on their state: all tasks, active tasks , or completed
+            tasks. It features a drag and drop list and a dark mode toggle. The
+            app also uses localStorage to persist user inputs between sessions.
+            The app is hosted on GitHub pages. I enjoyed building this app and
+            learnt a lot about vanilla JavaScript, particularly in this case how
+            localStorage behaves when dealing with objects and how to implement
+            drag and drop functionality.
           </div>
 
-          <div class="projects__grid-card">
-            <div class="card__img"></div>
+          <div class="projects__grid-card | flow">
+            <div
+              class="card__img"
+              data-link="https://adriananin.github.io/weather-app/"
+            ></div>
 
-            <p class="card__title">Project Title</p>
-
-            <hr class="card__hr" />
+            <p class="card__title">Weather App</p>
 
             <div class="card__stack">
-              <div class="card__ts">JS</div>
-              <div class="card__ts">HTML</div>
-              <div class="card__ts">CSS</div>
-              <div class="card__ts">React</div>
+              <div class="card__ts">
+                <i class="devicon-html5-plain-wordmark colored"></i>
+              </div>
+              <div class="card__ts">
+                <i class="devicon-css3-plain-wordmark colored"></i>
+              </div>
+              <div class="card__ts">
+                <i class="devicon-javascript-plain colored"></i>
+              </div>
             </div>
 
             <div class="card__links">
-              <a href="https://memoji-rho.vercel.app/" target="_blank"
+              <a
+                href="https://github.com/adriananin/weather-app"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="open github repo in new window"
                 ><i class="devicon-github-original"></i
               ></a>
               <a
-                href="https://github.com/adriananin/react-memory-game"
+                href="https://adriananin.github.io/weather-app/"
                 target="_blank"
                 class="link"
+                rel="noopener noreferrer"
                 ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                  <title>open-in-new</title>
+                  <title>open-in-new-window</title>
                   <path
                     d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"
                   /></svg
@@ -309,8 +366,18 @@
           </div>
 
           <div class="projects__grid-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique,
-            expedita?
+            The Weather web app is an app I built to practice AJAX. Users can
+            search for locations and get weather information for that day and a
+            4 day forecast and by default the weather information for Accra,
+            Ghana is shown. The background image of the app changes based on the
+            current weather conditions. It uses the Fetch API to make requests
+            and consumes data from the Virtual Crossing Weather API. I chose
+            that API because it gives a much longer forecast and additional
+            weather data like humidity and visibility which I included in my
+            app. The app features geolocation conversion which is converting the
+            entered location name into geographical coordinates using the
+            OpenStreetMap API to give weather data for remote areas that may not
+            be on the Virtual Crossing Weather API.
           </div>
         </div>
       </article>
@@ -320,7 +387,7 @@
 
         <form
           id="contact-form"
-          action="http://localhost:3001/email"
+          action="https://anin-dev-portfolio.onrender.com/email"
           method="POST"
         >
           <div class="contact__grid">
@@ -387,13 +454,13 @@
         <nav class="navigation | footer-nav" aria-label="secondary">
           <ul role="list" class="footer-ul">
             <li>
-              <a href="#about">About</a>
+              <a href="#about" aria-label="about">About</a>
             </li>
             <li>
-              <a href="#projects">Projects</a>
+              <a href="#projects" aria-label="projects">Projects</a>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <a href="#contact" aria-label="contact">Contact</a>
             </li>
           </ul>
         </nav>
@@ -431,5 +498,9 @@
 
     <script type="module" src="/src/js/main.js"></script>
     <script type="module" src="node_modules/spin.js/spin.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
   </body>
 </html>
