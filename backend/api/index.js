@@ -33,24 +33,6 @@ app.get("/api", (req, res) => {
   res.send("<h1>anin endpoint</h1>");
 });
 
-app.get("/api/email", (req, res) => {
-  res.setHeader("Cache-Control", "s-max-age=1, stale-while-revalidate");
-  res.send("<p>email endpoint test</p>");
-});
-
-app.get("/api/test", (req, res) => {
-  res.setHeader("Content-Type", "text/html");
-  res.setHeader("Cache-Control", "s-max-age=1, stale-while-revalidate");
-  res.send("<h1>test endpoint</h1>");
-});
-
-app.get("/api/emails", (req, res) => {
-  const responseData = { message: "email endpoint test" };
-  res.setHeader("Content-Type", "application/json");
-  res.setHeader("Cache-Control", "s-max-age=1, stale-while-revalidate");
-  res.json(responseData);
-});
-
 app.post("/api/email", (req, res) => {
   const { name, email, message } = req.body;
 
@@ -69,10 +51,6 @@ app.post("/api/email", (req, res) => {
     res.status(200).json({ success: true });
   });
 });
-
-// app.get("/", (req, res) => {
-//   res.send("<h1>anin endpoint</h1>");
-// });
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);

@@ -1,8 +1,6 @@
 {
   "rewrites": [
     { "source": "/api/email", "destination": "/api/email" },
-    { "source": "/api/test", "destination": "/api/test" },
-    { "source": "/api/emails", "destination": "/api/emails" },
     { "source": "/api", "destination": "/api" },
     { "source": "/api/(.*)", "destination": "/api" }
   ]
