@@ -151,12 +151,18 @@ svg {
   height: var(--step-2);
 }
 
-svg path {
+#postman {
+  width: var(--step-4);
+  height: var(--step-4);
+}
+
+#xSvg path,
+.link svg path {
   fill: var(--text);
   transition: fill 0.3s ease;
 }
 
-svg:hover path {
+#xSvg:hover path {
   fill: var(--background);
 }
 
@@ -486,6 +492,7 @@ h2 {
 .about__tech {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   gap: 2rem;
 }
@@ -541,11 +548,11 @@ h2 {
 }
 
 .projects__grid-card:nth-child(3) > .card__img {
-  background-image: url("../images/memoji.png");
+  background-image: url("../images/Furn.png");
 }
 
 .projects__grid-card:nth-child(5) > .card__img {
-  background-image: url("../images/todo.png");
+  background-image: url("../images/memoji.png");
 }
 
 .projects__grid-card:nth-child(7) > .card__img {
