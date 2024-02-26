@@ -544,7 +544,7 @@ h2 {
 }
 
 .projects__grid-card:nth-child(1) > .card__img {
-  background-image: url("../images/cv.png");
+  background-image: url("../images/anodyssey.png");
 }
 
 .projects__grid-card:nth-child(3) > .card__img {
@@ -556,7 +556,7 @@ h2 {
 }
 
 .projects__grid-card:nth-child(7) > .card__img {
-  background-image: url("../images/weather-app.png");
+  background-image: url("../images/cv.png");
 }
 
 .card__title {
