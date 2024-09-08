@@ -2,8 +2,8 @@
 
 .theme-toggle {
   --size: 1.2rem;
-  --icon-fill: rgba(37, 4, 4, 0.8);
-  --icon-fill-hover: rgb(37, 4, 4);
+  --icon-fill: rgba(12, 19, 8, 0.8);
+  --icon-fill-hover: rgb(12, 19, 8);
 
   background: none;
   border: none;
@@ -27,8 +27,8 @@
   }
 
   [data-theme="dark"] & {
-    --icon-fill: rgba(251, 218, 218, 0.8);
-    --icon-fill-hover: rgb(251, 218, 218);
+    --icon-fill: rgba(241, 247, 237, 0.8);
+    --icon-fill-hover: rgb(241, 247, 237);
   }
 
   @media (hover: none) {

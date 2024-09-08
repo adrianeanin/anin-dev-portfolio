@@ -193,7 +193,7 @@ const opts = {
   rotate: 0,
   animation: "spinner-line-fade-quick",
   direction: 1,
-  color: "#16caca",
+  color: "#68ce3a",
   fadeColor: "transparent",
   top: "50%",
   left: "0%",
